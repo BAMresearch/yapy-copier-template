@@ -252,5 +252,24 @@ pypi_host:
         - test.pypi.org
         - pypi.org
 
+#_subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
+_answers_file: "{{repo_name}}/.copier-answers.yml"
+#_templates_suffix: ""
+_exclude:
+  - "copier.yml"
+  - "copier.yaml"
+  - "*.py[co]"
+  - "__pycache__"
+  - ".git"
+  - ".DS_Store"
+  - ".svn"
+  - "*.log"
+  - "*.tmp"
+  - "~*"
+  - "*.kate-swp"
+  - ci/templates/
+  - docs/_templates
+  - templates/*.*
+#  - "*.j2"  # changelog template should not be rendered not but by semantic-release later
 _jinja_extensions:
     - jinja2_time.TimeExtension
