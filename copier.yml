@@ -269,7 +269,11 @@ pypi_host:
         - pypi.org
 
 _tasks:
-    - "tox -e check"
+    - name: "The current working directory:"
+      command: echo [[ _copier_conf.dst_path ]]
+    - name: check
+      command: tox -e check
+      when: false
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
 _exclude:
