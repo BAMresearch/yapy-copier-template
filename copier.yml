@@ -7,7 +7,7 @@
 
 author_count:
     type: int
-    help: How many main authors are involved? *{{release_date}}*
+    help: How many main authors are involved?
     default: 1
     validator: >-
         {% if author_count < 1 %}
