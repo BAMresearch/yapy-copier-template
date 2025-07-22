@@ -46,7 +46,6 @@ jobs:
 {%- endmacro -%}
 
 {%- macro setup_python(arch, py=python_versions|first, req=['ci/requirements.txt']) -%}
-      # see *py_ver* in ci/update.py
       - name: Setting up Python {{ py }}
         uses: actions/setup-python@v5
         with:
