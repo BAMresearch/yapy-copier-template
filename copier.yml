@@ -256,5 +256,7 @@ pypi_host:
         - pypi.org
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
+_exclude:
+    - test-answers-*
 _jinja_extensions:
     - jinja2_time.TimeExtension
