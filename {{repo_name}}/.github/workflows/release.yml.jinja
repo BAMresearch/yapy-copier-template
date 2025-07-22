@@ -4,7 +4,7 @@ name: Release
 on:
   workflow_call:
 
-{% import '.github/workflows/ci-cd.yml' as ci with context %}{# Use some Jinja macros -#}
+{% import '{{repo_name}}/.github/workflows/ci-cd.yml.jinja' as ci with context %}{# Use some Jinja macros -#}
 
 jobs:
   # make a new version first, release or prerelease
