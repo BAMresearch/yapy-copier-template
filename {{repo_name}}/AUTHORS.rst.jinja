@@ -1,0 +1,7 @@
+
+Authors
+=======
+{% for n in range(author_count|int) %}
+{% set contact = author_emails.split(',')[n]|trim or author_websites.split(',')[n]|trim -%}
+* {{ author_names.split(',')[n]|trim }}{% if contact %} - {{ contact }}{% endif %}
+{%- endfor %}
