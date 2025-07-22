@@ -51,9 +51,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '{{ py }}'
-          {% if arch %}
+          {% if arch -%}
           architecture: '{{ arch }}'
-          {% endif %}
+          {%- endif %}
           cache: pip
           cache-dependency-path: |
           {%- for fn in req +%}
@@ -89,7 +89,7 @@ jobs:
           fi
 {%- endmacro +%}
 
-  publish:
+  publish:  # needs to be in the top-level .yml for Trusted Publishing to work @pypi
     needs: [build,docs,coverage]
     runs-on: 'ubuntu-latest'
     permissions:
