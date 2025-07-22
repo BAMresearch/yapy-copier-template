@@ -269,9 +269,12 @@ pypi_host:
         - pypi.org
 
 _tasks:
-    - echo _copier_conf.dst_path
-    - pwd
-    - echo done
+    - name: 1
+      command: echo {{_copier_conf.dst_path}}
+    - name: 2
+      command: pwd
+    - name: 3
+      command: echo done
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
 _exclude:
