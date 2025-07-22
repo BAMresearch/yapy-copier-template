@@ -18,10 +18,9 @@ jobs:
       matrix:
         python_arch: ['x64']
         python:
-{% for env in tox_environments %}
-{% set prefix = env.split('-')[0] %}
-          - [{{prefix[2]}}, {{prefix[3:]}}]
-{% endfor %}
+        {%- for item in python_versions %}
+          - {{ item.split('.') | map('int') | list }}
+        {%- endfor %}
         # os: ['ubuntu', 'windows', 'macos']
         os: ['ubuntu']
     env:
