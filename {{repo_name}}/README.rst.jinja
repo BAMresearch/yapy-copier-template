@@ -19,7 +19,7 @@ Overview
     :alt: Commits since latest release
 
 .. |license| image:: https://img.shields.io/pypi/l/{{ distribution_name }}.svg
-    :target: https://en.wikipedia.org/wiki/{{ license|truncate([30,license.find('(')]|max(),end='')|replace(" v3 or later","")|replace(" ","_") }}
+    :target: https://en.wikipedia.org/wiki/{% if license == "MIT" %}MIT_license{% else %}{{ license|truncate([30,license.find('(')]|max(),end='')|replace(" v3 or later","")|replace(" ","_") }}{% endif %}
     :alt: License
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/{{ distribution_name }}.svg
@@ -69,9 +69,9 @@ Documentation
 Development
 ===========
 
-To run all the tests run::
+Run all tests with::
 
-    tox
+    tox -e py
 
 Note, to combine the coverage data from all the tox environments run:
 

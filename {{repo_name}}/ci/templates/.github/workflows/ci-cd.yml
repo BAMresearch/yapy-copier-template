@@ -36,13 +36,14 @@ jobs:
 
 {#- Some Jinja macros for reusing recurring workflow job steps -#}
 
-{%- macro checkout(depth=1) -%}
+{%- macro checkout(depth=1, ref=main) -%}
       - name: Checking out the repo
         uses: actions/checkout@v4
-        {%- if depth != 1 +%}
         with:
+          {%- if depth != 1 +%}
           fetch-depth: {{ depth }}
-        {%- endif -%}
+          {%- endif -%}
+          ref: {{ ref }}
 {%- endmacro -%}
 
 {%- macro setup_python(arch, py=py_ver, req=['ci/requirements.txt']) -%}
