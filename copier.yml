@@ -271,6 +271,7 @@ pypi_host:
 _tasks:
     - echo _copier_conf.dst_path
     - pwd
+    - echo done
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
 _exclude:
