@@ -269,10 +269,13 @@ pypi_host:
         - pypi.org
 
 _tasks:
-    - command: echo "op {{ _copier_operation }}"
+    - command: echo "op {{ _copier_operation }} at {{ _copier_phase }}"
     - command: echo "{{ _copier_conf.dst_path }};{{ _copier_conf.src_path }}"
     - command: pwd
     - command: echo done
+
+_migrations:
+    - command: echo "migration '{{ _stage }}'"
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
 _exclude:
