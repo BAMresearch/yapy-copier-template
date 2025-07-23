@@ -275,7 +275,8 @@ _tasks:
     - command: echo done
 
 _migrations:
-    - command: echo "migration '{{ _stage }}'"
+    - before: echo "migration '{{ _stage }}'"
+    - after: echo "migration '{{ _stage }}'"
 
 _subdirectory: "{{ '{{' }}repo_name{{ '}}' }}"
 _exclude:
