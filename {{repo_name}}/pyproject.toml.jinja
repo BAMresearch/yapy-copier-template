@@ -51,7 +51,7 @@ include = ["{{ package_name }}*"]
 
 [tool.setuptools.dynamic]
 version = {attr = "{{ package_name }}.__version__"}
-readme = {file = ["README.rst", "CHANGELOG.md"]}
+readme = {file = ["README.md", "CHANGELOG.md"]}
 
 [tool.coverage.report]
 path = "coverage-report"  # see coverage.yml github action

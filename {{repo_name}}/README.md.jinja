@@ -1,0 +1,44 @@
+# Overview
+
+{{ project_description }}
+
+[![PyPI Package latest release](https://img.shields.io/pypi/v/{{ distribution_name }}.svg)](https://{{ pypi_host }}/project/{{ distribution_name }})
+[![Commits since latest release](https://img.shields.io/github/commits-since/{{ repo_userorg }}/{{ repo_name }}/v{{ version }}.svg)](https://{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}/compare/v{{ version }}...{{ repo_main_branch }})
+[![License](https://img.shields.io/pypi/l/{{ distribution_name }}.svg)](https://en.wikipedia.org/wiki/{% if license == "MIT" %}MIT_license{% else %}{{ license|truncate([30,license.find('(')]|max(),end='')|replace(" v3 or later","")|replace(" ","_") }}{% endif %})
+[![Supported versions](https://img.shields.io/pypi/pyversions/{{ distribution_name }}.svg)](https://{{ pypi_host }}/project/{{ distribution_name }})
+[![PyPI Wheel](https://img.shields.io/pypi/wheel/{{ distribution_name }}.svg)](https://{{ pypi_host }}/project/{{ distribution_name }}#files)
+[![Weekly PyPI downloads](https://img.shields.io/pypi/dw/{{ distribution_name }}.svg)](https://{{ pypi_host }}/project/{{ distribution_name }}/)
+[![Continuous Integration and Deployment Status](https://{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}/actions/workflows/ci-cd.yml/badge.svg)](https://{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}/actions/workflows/ci-cd.yml)
+[![Coverage report](https://img.shields.io/endpoint?url={{ docs_url }}/coverage-report/cov.json)]({{ docs_url }}/coverage-report/)
+
+## Installation
+
+    pip install {{ distribution_name }}
+
+You can also install the in-development version with:
+{% if repo_hosting == "github.com" %}
+    pip install git+https://{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}.git@{{ repo_main_branch }}
+{% elif repo_hosting == "gitlab.com" %}
+    pip install https://{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}/-/archive/{{ repo_main_branch }}/{{ repo_name }}-{{ repo_main_branch }}.zip
+{% else %}
+    pip install git+ssh://git@{{ repo_hosting }}/{{ repo_userorg }}/{{ repo_name }}.git@{{ repo_main_branch }}
+{%- endif %}
+## Documentation
+
+{{ docs_url }}
+
+## Development
+
+Run all tests with:
+
+    tox -e py
+
+Note, to combine the coverage data from all the tox environments run:
+
+- Windows
+
+        set PYTEST_ADDOPTS=--cov-append tox
+
+- Other
+
+        PYTEST_ADDOPTS=--cov-append tox
