@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      # depth=0 is needed for semantic-release
       {{ ci.checkout(depth=0) }}
 
       - name: Setup git user
