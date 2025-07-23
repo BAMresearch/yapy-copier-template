@@ -11,7 +11,7 @@
 {# UNRELEASED -#}
 ## Unreleased
 {% for type_, commits in context.history.unreleased | dictsort %}
-### {{ type_ | capitalize }}
+### {{ type_ | capitalize }} {% if type == "unknown" %}Scope{% endif %}
 {% for commit in commits %}{% if type_ != "unknown" %}
 * {{ fmt_commit(commit) }}
 {% else %}
