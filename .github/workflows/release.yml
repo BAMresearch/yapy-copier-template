@@ -32,7 +32,7 @@ jobs:
 
       - name: Determine the next version number
         env:
-          GH_TOKEN: {{'${{ secrets.GITHUB_TOKEN }}'}}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: sh
         run: |
           set -x
