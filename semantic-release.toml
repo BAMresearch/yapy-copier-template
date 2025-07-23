@@ -1,0 +1,17 @@
+[semantic_release]
+version_variables = [                        # version location
+]
+
+[semantic_release.remote]
+ignore_token_for_push = true
+
+[semantic_release.commit_parser_options] # same as in the template itself
+allowed_tags = ["build", "chore", "ci", "docs", "feat", "enh", "fix", "perf", "style", "refactor", "test"]
+minor_tags = ["feat", "enh"]
+patch_tags = ["fix", "perf"]
+
+[semantic_release.changelog]
+exclude_commit_patterns = ["chore", ".*\\bGHA\\b.*", ".*\\b[gG][hH] actions?\\b.*"]
+
+[semantic_release.publish]
+upload_to_vcs_release = false

@@ -1,0 +1,50 @@
+name: Tests
+
+# Controls when the action will run.
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  # defining this job separately allows to refer to it later as job.needs dependency
+  tests:
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python_arch: ['x64']
+        python:
+          - 3.12
+        # os: ['ubuntu', 'windows', 'macos']
+        os: ['ubuntu']
+    env:
+      PYTHON: "${{ join(matrix.python, '.') }}"  # e.g. '3.11'
+      TOX_ENV: "${{ format('{0}{1}', 'py', join(matrix.python, '')) }}"  # e.g. 'py311'
+    runs-on: "${{ format('{0}-latest', matrix.os) }}"
+    name: '"Test py-${{ join(matrix.python, \'.\') }} (${{ matrix.os }})"'
+    steps:
+
+      - name: Checking out the repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setting up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON }}
+          architecture: ${{ matrix.python_arch }}
+          cache: pip
+          cache-dependency-path: "requirements.txt"
+
+      - name: Show installed package details
+        shell: sh
+        run: |
+          pip list --format=freeze
+
+      - name: Run tests
+        shell: sh
+        run: |
+          echo copier copy yapy-copier-template my-test-project
