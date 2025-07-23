@@ -2,6 +2,27 @@
 
 <!-- version list -->
 
+## v1.0.1 (2025-07-23)
+
+### Bug Fixes
+
+- **docs**: Filetype of readme in pyproject.toml needed
+  ([`40acc49`](https://github.com/BAMresearch/yapy-copier-template/commit/40acc49e1af806d1ebf7d698a5649fcd3f9f545b))
+
+- **GitHub Workflows**: Comment on history depth for semantic-release
+  ([`7e0b5be`](https://github.com/BAMresearch/yapy-copier-template/commit/7e0b5be8a27a8c49b95b7ed496f78cf022dcf844))
+
+### Continuous Integration
+
+- **Versioning**: Semantic release setup and github action workflow
+  ([`406d38b`](https://github.com/BAMresearch/yapy-copier-template/commit/406d38b76f0f00bfb015502fc18ed0dc547fef11))
+
+### Documentation
+
+- **changelog**: Remove duplicate entries
+  ([`a6b7371`](https://github.com/BAMresearch/yapy-copier-template/commit/a6b737115db1e8335e1f127ae523fcbe8df91dc1))
+
+
 ## v1.0.0 (2025-07-23)
 
 - Initial Release
