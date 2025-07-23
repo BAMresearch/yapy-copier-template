@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.1.2 (2025-07-23)
+
+### Bug Fixes
+
+- **changelog**: Rename section of commits without scope to *Unknown Scope* instead of just
+  *Unknown*
+  ([`c99148a`](https://github.com/BAMresearch/yapy-copier-template/commit/c99148ac826e8b5dd9167bdb0bd5d66394e7081d))
+
+
 ## v1.1.1 (2025-07-23)
 
 ### Bug Fixes
