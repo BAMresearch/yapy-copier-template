@@ -15,6 +15,7 @@ jobs:
       - name: Checking out the repo
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0  # needed for semantic-release
           ref: main
 
       - name: Setup git user
