@@ -2,6 +2,17 @@
 
 <!-- version list -->
 
+## v1.0.2 (2025-07-23)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Fix regexp for version update in readme
+  ([`f021e31`](https://github.com/BAMresearch/yapy-copier-template/commit/f021e31207e878cc3d0576b43730ba538bde376f))
+
+- **GitHub Workflows**: Fix regexp for version update in readme
+  ([`2b4bed6`](https://github.com/BAMresearch/yapy-copier-template/commit/2b4bed6e73b45087d5b8934cc34ab7d83048932e))
+
+
 ## v1.0.1 (2025-07-23)
 
 ### Bug Fixes
