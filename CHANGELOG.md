@@ -2,6 +2,21 @@
 
 <!-- version list -->
 
+## v1.1.0 (2025-07-23)
+
+### Bug Fixes
+
+- **readme**: Put project name and version number in the title, move project description after the
+  badges
+  ([`356d834`](https://github.com/BAMresearch/yapy-copier-template/commit/356d834b64a9865d9635b293a5d8f896bc60fa9f))
+
+### Enh
+
+- **changelog**: Rename section of commits without scope to *Unknown Scope* instead of just
+  *Unknown*
+  ([`0950019`](https://github.com/BAMresearch/yapy-copier-template/commit/095001940061d247ddc60948a2fa8ff216304138))
+
+
 ## v1.0.2 (2025-07-23)
 
 ### Bug Fixes
