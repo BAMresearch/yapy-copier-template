@@ -37,10 +37,10 @@ jobs:
         run: |
           set -x
           python -m pip install python-semantic-release
-          NEWVER=$(semantic-release version --print)
+          NEWVER=$(semantic-release -c semantic-release.toml version --print)
           # version number updates with regexp which is not supported by
           # semantic_release.version_variables in pyproject.toml
           sed -i -e "s/v\([0-9]\+\.\)\{3\}/v$NEWVER./" README.md
           git add README.md
           # creates a release only if there are relevant changes/commits starting with 'fix/feat()'
-          semantic-release version
+          semantic-release -c semantic-release.toml version
