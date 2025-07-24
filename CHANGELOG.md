@@ -2,6 +2,24 @@
 
 <!-- version list -->
 
+## v1.1.3 (2025-07-24)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Remove unused/obsolete package dependencies
+  ([`2281545`](https://github.com/BAMresearch/yapy-copier-template/commit/22815451a073ddbfc6efbf9d4208678c388424c8))
+
+- **readme**: Notes on running tests and updating the project config
+  ([`d72046b`](https://github.com/BAMresearch/yapy-copier-template/commit/d72046b6468fdde0c5b377a69b6ba165c7df603c))
+
+- **Tests**: Ipykernel is needed for notebook testing
+  ([`ceba3b8`](https://github.com/BAMresearch/yapy-copier-template/commit/ceba3b8ec0e9566f0e2668448a15aae38b8e00a1))
+
+- **Tests**: Move dependencies to tests/requirements file, remove package dependencies which go to
+  pyproject.toml
+  ([`9098966`](https://github.com/BAMresearch/yapy-copier-template/commit/9098966dbc7b0d490a37d8d3d21dcda587b8ecf9))
+
+
 ## v1.1.2 (2025-07-23)
 
 ### Bug Fixes
