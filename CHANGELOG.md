@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.4 (2025-07-24)
+
+### Bug Fixes
+
+- **Packaging**: Manifest update
+  ([`556b12a`](https://github.com/BAMresearch/yapy-copier-template/commit/556b12aa05015710176f105ace07ba0e7ef0bc5a))
+
+
 ## v1.1.3 (2025-07-24)
 
 ### Bug Fixes
