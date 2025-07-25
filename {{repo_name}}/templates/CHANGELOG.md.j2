@@ -1,7 +1,7 @@
 {% macro fmt_commit(commit) -%}
 {#- Use only the scope from commit summary, remove parentheses and tag. -#}
 {%- if commit.scope -%}
-{{ commit.scope }}: {{ commit.descriptions[0] }}
+**{{ commit.scope }}**: {{ commit.descriptions[0] }}
 {%- else -%}
 {{ commit.commit.summary.rstrip() }}
 {%- endif %} ([`{{ commit.short_hash }}`]({{ commit.hexsha | commit_hash_url }}))
