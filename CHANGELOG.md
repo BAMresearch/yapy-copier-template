@@ -2,6 +2,22 @@
 
 <!-- version list -->
 
+## v1.1.6 (2025-07-25)
+
+### Bug Fixes
+
+- **Changelog**: Bold commit scope at front of each item
+  ([`fd799fa`](https://github.com/BAMresearch/yapy-copier-template/commit/fd799facfdd0917fbf7d09ee438a47ab7cc046f5))
+
+- **Changelog**: Sort changes chronologically in each category
+  ([`173ed43`](https://github.com/BAMresearch/yapy-copier-template/commit/173ed438c95d1d0da983f3fd1e53d301deed2996))
+
+### Code Style
+
+- **Changelog**: Template formatted more readable
+  ([`9ea3b09`](https://github.com/BAMresearch/yapy-copier-template/commit/9ea3b09f589c7a753569a979fa083e7af7ceb481))
+
+
 ## v1.1.5 (2025-07-25)
 
 ### Bug Fixes
