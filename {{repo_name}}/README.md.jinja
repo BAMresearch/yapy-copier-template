@@ -43,9 +43,22 @@ Run all tests with:
 
     tox -e py
 
+### Package Version
+
+Get the next version number and how the GIT history would be interpreted for that:
+
+    pip install python-semantic-release
+    semantic-release -v version --print
+
+This prints its interpretation of the commits in detail. Make sure to supply the `--print`
+argument to not raise the version number which is done automatically by the *release* job
+of the GitHub Action Workflows.
+
 ### Project template
 
-Update the project configuration from the *copier* template:
+Update the project configuration from the *copier* template and make sure the required packages
+are installed:
 
+    pip install copier jinja2-time
     copier update --trust --skip-answered
 
