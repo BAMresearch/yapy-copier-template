@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.5 (2025-07-25)
+
+### Bug Fixes
+
+- **readme**: Notes getting the next version number, note on packages to install
+  ([`3428861`](https://github.com/BAMresearch/yapy-copier-template/commit/34288612197423e025aa77198008ef306bf3c6cd))
+
+
 ## v1.1.4 (2025-07-24)
 
 ### Bug Fixes
