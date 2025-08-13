@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.8 (2025-08-13)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Publish with verbosity for details on errors
+  ([`5999991`](https://github.com/BAMresearch/yapy-copier-template/commit/5999991cb701a45b13e22ac66b327c9e067b4089))
+
+
 ## v1.1.7 (2025-08-13)
 
 ### Bug Fixes

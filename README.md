@@ -1,4 +1,4 @@
-# yapy-copier-template (v1.1.7)
+# yapy-copier-template (v1.1.8)
 
 Yet Another Python [Copier][1] template for a Python modules and applications focussing on data science, processing and analysis.
 
