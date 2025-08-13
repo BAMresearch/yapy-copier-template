@@ -2,6 +2,25 @@
 
 <!-- version list -->
 
+## v1.1.7 (2025-08-13)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Publish needs explicit pypi url to switch to test.pypi.org as well
+  ([`38b4ae7`](https://github.com/BAMresearch/yapy-copier-template/commit/38b4ae7a828fe23e93a17b16eacbee02578663d0))
+
+- **GitHub Workflows**: Pypi url needs /legacy/ suffix
+  ([`f88156e`](https://github.com/BAMresearch/yapy-copier-template/commit/f88156e9a1cddef9d664e02be9899a8efbf916c9))
+
+- **GitHub Workflows**: Update package DB before installing required system packages on linux
+  ([`34ca575`](https://github.com/BAMresearch/yapy-copier-template/commit/34ca575da01eaa430e17fc43b206fcb580fd80a4))
+
+### Documentation
+
+- **Readme**: Notes on publishing documentation and built packages
+  ([`b37798c`](https://github.com/BAMresearch/yapy-copier-template/commit/b37798c80b4b00d9d57c3ec0f025f4d8aa40515e))
+
+
 ## v1.1.6 (2025-07-25)
 
 ### Bug Fixes
