@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.9 (2025-08-15)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Moved checks early before tests, instead of docs
+  ([`5c501fc`](https://github.com/BAMresearch/yapy-copier-template/commit/5c501fc9d2a95e3af8221514e8902f687658c2b3))
+
+
 ## v1.1.8 (2025-08-13)
 
 ### Bug Fixes
