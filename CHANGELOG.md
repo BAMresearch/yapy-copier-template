@@ -2,6 +2,17 @@
 
 <!-- version list -->
 
+## v1.1.10 (2025-08-19)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Bumps actions/checkout from 4 to 5
+  ([`f81ee50`](https://github.com/BAMresearch/yapy-copier-template/commit/f81ee50596fd86dfb45d8f8f448ff2311eae2794))
+
+- **VCS**: Let git ignore temp files from Kate editor
+  ([`d499322`](https://github.com/BAMresearch/yapy-copier-template/commit/d4993226e01003e1bb34b4cb230a67c56cf23707))
+
+
 ## v1.1.9 (2025-08-15)
 
 ### Bug Fixes
