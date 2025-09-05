@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.11 (2025-09-05)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Explicit PyPI URL only for custom or tests repo
+  ([`abd7f9a`](https://github.com/BAMresearch/yapy-copier-template/commit/abd7f9a2373dd681a4f03fa569c6969a3787ad1c))
+
+
 ## v1.1.10 (2025-08-19)
 
 ### Bug Fixes
