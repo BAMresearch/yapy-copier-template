@@ -110,5 +110,7 @@ jobs:
       - name: Publish package distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
+        {%- if pypi_host != "pypi.org" +%}
           repository-url: https://{{ pypi_host }}/legacy/
+        {%- endif +%}
           verbose: true
