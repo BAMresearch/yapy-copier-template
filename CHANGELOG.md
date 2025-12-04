@@ -2,6 +2,20 @@
 
 <!-- version list -->
 
+## v1.1.12 (2025-12-04)
+
+### Bug Fixes
+
+- **GitHub Workflows**: Bump actions/checkout from 5 to 6
+  ([`72d0cde`](https://github.com/BAMresearch/yapy-copier-template/commit/72d0cdee38ba179635795ae71f6bb597c05d839e))
+
+- **GitHub Workflows**: Bump actions/download-artifact from 4 to 6
+  ([`a7f7369`](https://github.com/BAMresearch/yapy-copier-template/commit/a7f73692688941a2796d8073398dfec3f6610a65))
+
+- **GitHub Workflows**: Bump actions/upload-artifact from 4 to 5
+  ([`bd598e8`](https://github.com/BAMresearch/yapy-copier-template/commit/bd598e876e52f37e32c5a24c73b4609235d63d8f))
+
+
 ## v1.1.11 (2025-09-05)
 
 ### Bug Fixes
