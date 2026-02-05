@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.13 (2026-02-05)
+
+### Bug Fixes
+
+- **pyproject**: Allow version numbers leading zero, updated config statement
+  ([`600ff92`](https://github.com/BAMresearch/yapy-copier-template/commit/600ff924b382214aaa72979156e3e036850afa5e))
+
+
 ## v1.1.12 (2025-12-04)
 
 ### Bug Fixes
