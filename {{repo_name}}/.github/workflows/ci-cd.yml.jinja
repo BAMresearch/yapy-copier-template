@@ -96,10 +96,6 @@ jobs:
       id-token: write
     steps:
 
-      {{ checkout() }}
-
-      {{ pip_install_req() }}
-
       - name: Download package artifacts
         uses: actions/download-artifact@v6
         with:
