@@ -35,12 +35,14 @@ jobs:
 {%- macro checkout(depth=1, ref=none) -%}
       - name: Checking out the repo
         uses: actions/checkout@v6
+        {%- if depth != 1 or ref +%}
         with: {%- if depth != 1 +%}
           fetch-depth: {{ depth }}
           {%- endif +%}
           {%- if ref +%}
           ref: {{ ref }}
           {%- endif +%}
+        {%- endif +%}
 {%- endmacro -%}
 
 {%- macro setup_python(arch, py=python_versions|first) -%}
