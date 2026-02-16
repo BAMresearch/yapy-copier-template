@@ -27,15 +27,6 @@ dependencies = [
 
 ]
 [project.optional-dependencies]
-ci = [ # packages required to run tox on the host system
-    "tox",
-    "build",
-    "toml",
-    "python-semantic-release",
-    # provides the *coverage* command to combine and publish coverage data
-    # generated within tox environments
-    "pytest-cov"
-]
 tests = [
     "pytest",
     "pytest-cov",
@@ -48,6 +39,15 @@ docs = [
     "myst_parser",
     "toml",
     "numpy"
+]
+ci = [
+    "tox",
+    "build",
+    "toml",
+    "python-semantic-release",
+    # provides the *coverage* command to combine and publish coverage data
+    # generated within tox environments
+    "pytest-cov"
 ]
 {% for n in range(author_count|int) %}
 [[project.authors]]
