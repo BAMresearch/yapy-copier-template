@@ -2,6 +2,52 @@
 
 <!-- version list -->
 
+## v1.1.14 (2026-02-16)
+
+### Bug Fixes
+
+- **Documentation**: Bump package versions required for generating docs
+  ([`0ad0fa2`](https://github.com/BAMresearch/yapy-copier-template/commit/0ad0fa239ce5a1646ca30a8fc7b69d9efcfc469b))
+
+- **Documentation**: Mermaid extension and broader markdown support
+  ([`cfcc0b4`](https://github.com/BAMresearch/yapy-copier-template/commit/cfcc0b4349e98868dc5f79fa0ead34113a8a2687))
+
+- **Documentation**: Typo
+  ([`18d7a48`](https://github.com/BAMresearch/yapy-copier-template/commit/18d7a48460734c79bdc9a38b1061743e54be52a1))
+
+- **GitHub Workflows**: Do not check out main branch by default
+  ([`e6e919f`](https://github.com/BAMresearch/yapy-copier-template/commit/e6e919f4fcdc3dea20e9f83577d449906d271618))
+
+- **GitHub Workflows**: Prevent empty 'with:'
+  ([`4601ded`](https://github.com/BAMresearch/yapy-copier-template/commit/4601ded3d0091d0aab992cb014aa214797a34f95))
+
+- **GitHub Workflows**: Remove unneeded checkout in publish step
+  ([`4ccadd0`](https://github.com/BAMresearch/yapy-copier-template/commit/4ccadd0440f5f14e12b8bd3a7266cc604ac7c4de))
+
+- **GitHub Workflows**: Run for other branches (PRs) as well
+  ([`9052d82`](https://github.com/BAMresearch/yapy-copier-template/commit/9052d82729977e6700673b70164ecebc472aad40))
+
+- **GitHub Workflows**: Use actions/setup-python@v6
+  ([`b8495bf`](https://github.com/BAMresearch/yapy-copier-template/commit/b8495bf476ce874933107a20218f247e71e1c708))
+
+- **pre-commit**: Version bump
+  ([`e86d747`](https://github.com/BAMresearch/yapy-copier-template/commit/e86d7475d0cfdcbc6f48b82e5eb22498a32f7c34))
+
+- **Project**: Include all toplevel markdown file in manifest
+  ([`f3ad228`](https://github.com/BAMresearch/yapy-copier-template/commit/f3ad228919eef8a6ef8ca53e6aaab269b2d26af4))
+
+- **Project**: Use pyproject.toml *optional-dependencies* for requirements
+  ([`641e190`](https://github.com/BAMresearch/yapy-copier-template/commit/641e1909460f06e01a2484530c91e8b98bf6f2d5))
+
+- **Project**: Use pyproject.toml *optional-dependencies* for requirements, pt.2
+  ([`2b684ab`](https://github.com/BAMresearch/yapy-copier-template/commit/2b684ab7d5256e6301ecebd5715f2665b606d142))
+
+### Code Style
+
+- **Documentation**: Shorten long line
+  ([`4140fb3`](https://github.com/BAMresearch/yapy-copier-template/commit/4140fb32f877a27d3f71ef8e9d6ca213a2ce8b75))
+
+
 ## v1.1.13 (2026-02-05)
 
 ### Bug Fixes
