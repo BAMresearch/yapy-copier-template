@@ -32,8 +32,7 @@ jobs:
 
       {{ ci.checkout(depth=0) }}
 
-      {{ ci.setup_python(arch='${{ matrix.python_arch }}', py='${{ env.PYTHON }}',
-                         req=['ci/requirements.txt', 'tests/requirements.txt']) }}
+      {{ ci.setup_python(arch='${{ matrix.python_arch }}', py='${{ env.PYTHON }}') }}
 
       {{ ci.sys_install_req() }}
 

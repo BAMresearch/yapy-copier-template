@@ -45,7 +45,7 @@ jobs:
           ref: {{ ref }}
 {%- endmacro -%}
 
-{%- macro setup_python(arch, py=python_versions|first, req=['ci/requirements.txt']) -%}
+{%- macro setup_python(arch, py=python_versions|first) -%}
       - name: Setting up Python {{ py }}
         uses: actions/setup-python@v5
         with:
@@ -55,9 +55,7 @@ jobs:
           {%- endif +%}
           cache: pip
           cache-dependency-path: |
-          {%- for fn in req +%}
-            {{ fn }}
-          {%- endfor -%}
+            pyproject.toml
 {%- endmacro -%}
 
 {% macro conda_activate() -%}
@@ -70,7 +68,7 @@ jobs:
         run: |
           {{ conda_activate() }}
           python -m pip install --upgrade pip
-          python -m pip install --progress-bar=off -r ci/requirements.txt
+          python -m pip install --progress-bar=off .[ci]
 {%- endmacro -%}
 
 {% macro sys_install_req() -%}
