@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.15 (2026-02-17)
+
+### Bug Fixes
+
+- **pypi**: Move `pytest_notebook` dependency from `pyproject.toml` to `tox.ini`
+  ([`afb9461`](https://github.com/BAMresearch/yapy-copier-template/commit/afb9461f927d74f6fc43ca3599f27b7ad2535e1f))
+
+
 ## v1.1.14 (2026-02-16)
 
 ### Bug Fixes
