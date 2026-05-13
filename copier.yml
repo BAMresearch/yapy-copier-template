@@ -36,7 +36,7 @@ author_emails:
     default: >-
         {%- for author in author_names.split(",") -%}
             {%- set names = author.strip().split(" ") -%}
-            {%- if names|length >= 2 -%}
+            {%- if names|length >= 1 -%}
                 {{ names[0].lower() }}.{{ names[-1].lower() }}@example.com{% if not loop.last %}, {% endif %}
             {%- endif -%}
         {%- endfor -%}
