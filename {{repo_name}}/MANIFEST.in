@@ -1,7 +1,7 @@
 graft docs
 exclude docs/reference/autosummary/*
 graft src
-graft ci
+graft scripts
 graft tests
 graft testdata
 
@@ -13,8 +13,7 @@ include templates/*.j2
 include notebooks/*.ipynb
 
 include *.md
-include AUTHORS.rst
-include CONTRIBUTING.rst
 include LICENSE
 
 global-exclude *.py[cod] __pycache__/* *.so *.dylib .DS_Store */.ipynb_checkpoints/* .*.kate-swp
+prune .idea
