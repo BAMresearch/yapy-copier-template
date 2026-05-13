@@ -13,8 +13,6 @@ include templates/*.j2
 include notebooks/*.ipynb
 
 include *.md
-include AUTHORS.rst
-include CONTRIBUTING.rst
 include LICENSE
 
 global-exclude *.py[cod] __pycache__/* *.so *.dylib .DS_Store */.ipynb_checkpoints/* .*.kate-swp
