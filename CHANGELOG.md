@@ -2,6 +2,46 @@
 
 <!-- version list -->
 
+## v1.1.16 (2026-05-13)
+
+### Bug Fixes
+
+- **CI**: Set *pypi* environment for ci-cd publishing
+  ([`8e3d600`](https://github.com/BAMresearch/yapy-copier-template/commit/8e3d6008e1a82a19fbb27fbef1ba2faf4947d738))
+
+- **docs**: Do not autogenerate reference for attributes on module level, prevent import errors when
+  building
+  ([`7c832d6`](https://github.com/BAMresearch/yapy-copier-template/commit/7c832d647d471dd72d735e8d6c9183022778193e))
+
+- **docs**: Point autosummary_generate to index.rst file
+  ([`9eca555`](https://github.com/BAMresearch/yapy-copier-template/commit/9eca55537df6eb35e015d3efe8093ff4690f4ba1))
+
+- **docs**: Remove separate docs pages for installation and usage
+  ([`d769a2b`](https://github.com/BAMresearch/yapy-copier-template/commit/d769a2b75bceea5c76e187de45d481226d406db3))
+
+- **Packaging**: Add often used scripts dir, remove obsolete ci dir, exclude PyCharm config dir
+  ([`c1f6463`](https://github.com/BAMresearch/yapy-copier-template/commit/c1f6463db936f73d096f2b5adda70eac533f3dca))
+
+- **questionaire**: Author_names can consist of only one word
+  ([`ed5c9f8`](https://github.com/BAMresearch/yapy-copier-template/commit/ed5c9f837c5cfd0293ec00b2b16b5c83a2897e99))
+
+- **README**: Extra explanation sentence under Testing
+  ([`058921b`](https://github.com/BAMresearch/yapy-copier-template/commit/058921b930a297b1193e3fb3aa1f933745655f4d))
+
+### Code Style
+
+- **pyproject**: Remove non-existent isort exclude dir
+  ([`f61ac20`](https://github.com/BAMresearch/yapy-copier-template/commit/f61ac207313ae9105a4d1f88cc312fa1af9e9bf5))
+
+### Documentation
+
+- **Project**: Change format of AUTHORS and CONTRIBUTING file to markdown
+  ([`60d5cc1`](https://github.com/BAMresearch/yapy-copier-template/commit/60d5cc1bb3aa588582a302bb3dc3ff9c9aa57ba1))
+
+- **Project**: Remove obsolete config files from template
+  ([`86e8c7f`](https://github.com/BAMresearch/yapy-copier-template/commit/86e8c7fe4c469b710ab193e3e44398a0ce39b5e9))
+
+
 ## v1.1.15 (2026-02-17)
 
 ### Bug Fixes
