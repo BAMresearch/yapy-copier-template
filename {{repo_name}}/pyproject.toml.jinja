@@ -87,12 +87,15 @@ version_variables = [                        # version location
     "src/{{ package_name }}/__init__.py:__version__",
     "docs/conf.py:version",
 ]
+
 [tool.semantic_release.commit_parser_options]
 allowed_tags = ["build", "chore", "ci", "docs", "feat", "enh", "fix", "perf", "style", "refactor", "test"]
 minor_tags = ["feat", "enh"]
 patch_tags = ["fix", "perf"]
+
 [tool.semantic_release.changelog]
 exclude_commit_patterns = ["chore", ".*\\bGHA\\b.*", ".*\\b[gG][hH] actions?\\b.*"]
+
 [tool.semantic_release.publish]
 upload_to_vcs_release = false
 
