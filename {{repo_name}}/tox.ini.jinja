@@ -80,14 +80,6 @@ commands =
     coverage erase
     rm -Rf dist build htmlcov src/{{ package_name }}.egg-info
 
-[flake8]
-max-line-length = 100
-extend-exclude =
-    .ipynb_checkpoints
-per-file-ignores =
-    # __init__.py:F401  # example
-extend-ignore = E203
-
 [pytest]
 # If a pytest section is found in one of the possible config files
 # (pytest.ini, tox.ini or setup.cfg), then pytest will not look for any others,
