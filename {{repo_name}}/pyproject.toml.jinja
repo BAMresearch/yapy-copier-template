@@ -96,19 +96,18 @@ exclude_commit_patterns = ["chore", ".*\\bGHA\\b.*", ".*\\b[gG][hH] actions?\\b.
 [tool.semantic_release.publish]
 upload_to_vcs_release = false
 
-[tool.black]
+[tool.ruff]
 line-length = 100
-preview = true
+extend-exclude = [".ipynb_checkpoints"]
 
-[tool.isort]
-profile = "black"
-line_length = 100
-group_by_package = true
-known_first_party = "{{ package_name }}"
-ensure_newline_before_comments = true
-extend_skip = [".ipynb_checkpoints"]
+[tool.ruff.lint]
+ignore = ["E203"]
 
-[tool.docformatter]
-recursive = true
-wrap-summaries = 100
-wrap-descriptions = 100
+[tool.ruff.lint.isort]
+known-first-party = ["{{ package_name }}"]
+group-by-package = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
