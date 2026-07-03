@@ -2,6 +2,22 @@
 
 <!-- version list -->
 
+## v1.1.17 (2026-07-03)
+
+### Bug Fixes
+
+- **pyproject.yml**: Formatting
+  ([`34f86bd`](https://github.com/BAMresearch/yapy-copier-template/commit/34f86bda6dfafac57918822f7c8b230f065551f9))
+
+### Refactoring
+
+- **pyproject.toml**: For Ruff integration
+  ([`c8e2775`](https://github.com/BAMresearch/yapy-copier-template/commit/c8e2775cf30ae69bb491c60db28befb2d08be4c1))
+
+- **tox.ini**: Remove flake8 configuration section in favor of ruff
+  ([`5c651a5`](https://github.com/BAMresearch/yapy-copier-template/commit/5c651a5d884170351aae36468b57bd26a9899dfa))
+
+
 ## v1.1.16 (2026-05-13)
 
 ### Bug Fixes
