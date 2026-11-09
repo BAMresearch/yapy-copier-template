@@ -43,13 +43,13 @@ commands = python -m build
 [testenv:check]
 deps =
     check-manifest
-    flake8
-    isort
+    ruff
 skip_install = true
 commands =
     check-manifest {toxinidir}
-    flake8
-    isort --verbose --check-only --diff --filter-files .
+    # lint incl. import sorting (rule set "I", replaces isort)
+    ruff check --extend-select I {toxinidir}
+    ruff format --check --diff {toxinidir}
 
 [testenv:docs]
 extras =
