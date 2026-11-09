@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.18 (2026-11-09)
+
+### Bug Fixes
+
+- **tox.ini**: Use ruff for linting
+  ([`495d11f`](https://github.com/BAMresearch/yapy-copier-template/commit/495d11fdcddbed90c3fd67935274361172b6af43))
+
+
 ## v1.1.17 (2026-07-03)
 
 ### Bug Fixes
